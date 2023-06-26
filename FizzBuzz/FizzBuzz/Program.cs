@@ -1,3 +1,7 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using FizzBuzz;
 
-Console.WriteLine("Hello, World!");
+FizzBuzz.FizzBuzz fizzBuzz = new ();
+fizzBuzz.AddDivision(new Fizz());
+fizzBuzz.AddDivision(new Buzz());
+
+Console.Write(string.Join(", ", fizzBuzz.GenerateRange(100)));
